@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepL Übersetzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>DeepL Übersetzer</h2>
+
+    <!-- Textübersetzung -->
+    <label for="text">Gib deinen Text ein:</label>
+    <textarea id="text" placeholder="Hier eingeben..."></textarea>
+    
+    <label for="target-lang">Zielsprache:</label>
+    <select id="target-lang">
+        <option value="EN">Englisch</option>
+        <option value="DE">Deutsch</option>
+        <option value="FR">Französisch</option>
+        <option value="ES">Spanisch</option>
+    </select>
+    
+    <button onclick="translateText()">Übersetzen</button>
+    <p id="translated-text"></p>
+
+    <hr>
+
+    <!-- Dokument-Upload -->
+    <label for="file">Lade eine Datei hoch:</label>
+    <input type="file" id="file">
+    <button onclick="translateDocument()">Datei übersetzen</button>
+    
+    <p id="file-response"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
