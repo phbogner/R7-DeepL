@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepL Übersetzer</title>
+</head>
+<body>
+  <h1>DeepL Übersetzer</h1>
+  <form id="uploadForm">
+    <label for="fileInput">Wähle eine Datei zum Übersetzen:</label>
+    <input type="file" id="fileInput" name="file" required>
+    
+    <label for="languageSelect">Zielsprache:</label>
+    <select id="languageSelect" required>
+      <option value="EN">Englisch</option>
+      <option value="DE">Deutsch</option>
+      <option value="FR">Französisch</option>
+      <option value="IT">Italienisch</option>
+      <option value="ES">Spanisch</option>
+    </select>
+    
+    <button type="submit">Übersetzen</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
